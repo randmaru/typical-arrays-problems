@@ -1,24 +1,24 @@
 exports.min = min = (...array) => {
-    if (array.length >= 1) {
-        return Math.min(...array);
-    } else {
+    if (array.length == 0 || typeof array == "undefined") {
         return 0;
+    } else {
+        return Math.min(...array);
     }
 };
 
 exports.max = max = (...array) => {
-    if (array.length >= 1) {
-        return Math.max(...array);
-    } else {
+    if (array.length == 0 || typeof array == "undefined") {
         return 0;
+    } else {
+        return Math.max(...array);
     }
 };
 
 exports.avg = avg = (...array) => {
-    if (array.length >= 1) {
-        return [...array].reduce((a, b) => a + b, 0) / array.length;
-    } else {
+    if (array.length == 0 || typeof array == "undefined") {
         return 0;
+    } else {
+        return [...array].reduce((a, b) => a + b, 0) / array.length;
     }
 };
 
