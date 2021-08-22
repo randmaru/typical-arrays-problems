@@ -21,7 +21,3 @@ exports.avg = avg = (...array) => {
         return [...array].reduce((a, b) => a + b, 0) / array.length;
     }
 };
-
-console.log(min(1, 2, 3, 4)); // returns 1;
-console.log(max(1, 2, 3, 4)); // returns 4;
-console.log(avg(1, 2, 3, 4)); // returns 2.5;
