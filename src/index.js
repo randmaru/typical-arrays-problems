@@ -14,10 +14,10 @@ exports.max = function max(array) {
     }
 };
 
-exports.avg = function avg(...array) {
+exports.avg = function avg(array) {
     if (!array.length || !array) {
         return 0;
     } else {
-        return [...array].reduce((a, b) => a + b, 0) / array.length;
+        return array.reduce((a, b) => a + b) / array.length;
     }
 };
