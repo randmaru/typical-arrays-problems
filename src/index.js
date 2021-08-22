@@ -7,5 +7,5 @@ exports.max = max = (array) => {
 };
 
 exports.avg = avg = (array) => {
-    array.length === 0 ? 0 : (Math.max(array) + Math.min(array)) / 2;
+    array.length === 0 ? 0 : array.reduce((a, b) => a + b) / array.length;
 };
